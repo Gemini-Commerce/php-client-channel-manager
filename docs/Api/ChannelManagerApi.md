@@ -99,8 +99,10 @@ Create a new channel
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure OAuth2 access token for authorization: standardAuthorization
-$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+// Configure API key authorization: Authorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -131,7 +133,7 @@ try {
 
 ### Authorization
 
-[standardAuthorization](../../README.md#standardAuthorization)
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
