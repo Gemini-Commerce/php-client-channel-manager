@@ -39,8 +39,10 @@ Create a new association between a channel and a market or entities
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure OAuth2 access token for authorization: standardAuthorization
-$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+// Configure API key authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -99,8 +101,10 @@ Create a new channel
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure OAuth2 access token for authorization: standardAuthorization
-$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+// Configure API key authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -159,8 +163,10 @@ Create a new market
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure OAuth2 access token for authorization: standardAuthorization
-$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+// Configure API key authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -219,8 +225,10 @@ Delete an existing association between a channel and a market or entities
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure OAuth2 access token for authorization: standardAuthorization
-$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+// Configure API key authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -279,8 +287,10 @@ Soft delete an existing channel
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure OAuth2 access token for authorization: standardAuthorization
-$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+// Configure API key authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -339,8 +349,10 @@ Soft delete an existing market
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure OAuth2 access token for authorization: standardAuthorization
-$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+// Configure API key authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -399,8 +411,10 @@ Get an existing channel
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure OAuth2 access token for authorization: standardAuthorization
-$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+// Configure API key authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -459,8 +473,10 @@ Get an existing channel with associations
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure OAuth2 access token for authorization: standardAuthorization
-$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+// Configure API key authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -519,8 +535,10 @@ Get an existing market
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure OAuth2 access token for authorization: standardAuthorization
-$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+// Configure API key authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -579,8 +597,10 @@ Get an existing market with associations
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure OAuth2 access token for authorization: standardAuthorization
-$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+// Configure API key authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -639,8 +659,10 @@ List all channels
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure OAuth2 access token for authorization: standardAuthorization
-$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+// Configure API key authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -699,8 +721,10 @@ List all channels with associations
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure OAuth2 access token for authorization: standardAuthorization
-$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+// Configure API key authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -759,8 +783,10 @@ List all markets
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure OAuth2 access token for authorization: standardAuthorization
-$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+// Configure API key authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -819,8 +845,10 @@ List all markets with associations
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure OAuth2 access token for authorization: standardAuthorization
-$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+// Configure API key authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -879,8 +907,10 @@ Update an existing channel
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure OAuth2 access token for authorization: standardAuthorization
-$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+// Configure API key authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -939,8 +969,10 @@ Update an existing market
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure OAuth2 access token for authorization: standardAuthorization
-$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+// Configure API key authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
