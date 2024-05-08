@@ -49,6 +49,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+// Configure OAuth2 access token for authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -131,7 +134,14 @@ Class | Method | HTTP request | Description
 - [RpcStatus](docs/Model/RpcStatus.md)
 
 ## Authorization
-Endpoints do not require authorization.
+
+Authentication schemes defined for the API:
+### standardAuthorization
+
+- **Type**: `OAuth`
+- **Flow**: `implicit`
+- **Authorization URL**: ``
+- **Scopes**: N/A
 
 ## Tests
 

@@ -39,6 +39,9 @@ Create a new association between a channel and a market or entities
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure OAuth2 access token for authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -68,7 +71,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -95,6 +98,9 @@ Create a new channel
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
+// Configure OAuth2 access token for authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -125,7 +131,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -152,6 +158,9 @@ Create a new market
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
+// Configure OAuth2 access token for authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -182,7 +191,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -209,6 +218,9 @@ Delete an existing association between a channel and a market or entities
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
+// Configure OAuth2 access token for authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -239,7 +251,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -266,6 +278,9 @@ Soft delete an existing channel
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
+// Configure OAuth2 access token for authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -296,7 +311,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -323,6 +338,9 @@ Soft delete an existing market
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
+// Configure OAuth2 access token for authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -353,7 +371,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -380,6 +398,9 @@ Get an existing channel
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
+// Configure OAuth2 access token for authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -410,7 +431,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -437,6 +458,9 @@ Get an existing channel with associations
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
+// Configure OAuth2 access token for authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -467,7 +491,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -494,6 +518,9 @@ Get an existing market
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
+// Configure OAuth2 access token for authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -524,7 +551,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -551,6 +578,9 @@ Get an existing market with associations
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
+// Configure OAuth2 access token for authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -581,7 +611,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -608,6 +638,9 @@ List all channels
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
+// Configure OAuth2 access token for authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -638,7 +671,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -665,6 +698,9 @@ List all channels with associations
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
+// Configure OAuth2 access token for authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -695,7 +731,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -722,6 +758,9 @@ List all markets
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
+// Configure OAuth2 access token for authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -752,7 +791,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -779,6 +818,9 @@ List all markets with associations
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
+// Configure OAuth2 access token for authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -809,7 +851,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -836,6 +878,9 @@ Update an existing channel
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
+// Configure OAuth2 access token for authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -866,7 +911,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -893,6 +938,9 @@ Update an existing market
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+
+// Configure OAuth2 access token for authorization: standardAuthorization
+$config = GeminiCommerce\ChannelManager\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
 $apiInstance = new GeminiCommerce\ChannelManager\Api\ChannelManagerApi(
@@ -923,7 +971,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../../README.md#standardAuthorization)
 
 ### HTTP request headers
 
