@@ -63,7 +63,7 @@ class ChannelmanagerUpdateMarketRequest implements ModelInterface, ArrayAccess, 
         'tenant_id' => 'string',
         'id' => 'string',
         'payload' => '\GeminiCommerce\ChannelManager\Model\ChannelmanagerUpdateMarketRequestPayload',
-        'payload_mask' => 'string[]'
+        'payload_mask' => 'string'
     ];
 
     /**
@@ -305,6 +305,12 @@ class ChannelmanagerUpdateMarketRequest implements ModelInterface, ArrayAccess, 
     {
         $invalidProperties = [];
 
+        if ($this->container['tenant_id'] === null) {
+            $invalidProperties[] = "'tenant_id' can't be null";
+        }
+        if ($this->container['id'] === null) {
+            $invalidProperties[] = "'id' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -323,7 +329,7 @@ class ChannelmanagerUpdateMarketRequest implements ModelInterface, ArrayAccess, 
     /**
      * Gets tenant_id
      *
-     * @return string|null
+     * @return string
      */
     public function getTenantId()
     {
@@ -333,7 +339,7 @@ class ChannelmanagerUpdateMarketRequest implements ModelInterface, ArrayAccess, 
     /**
      * Sets tenant_id
      *
-     * @param string|null $tenant_id tenant_id
+     * @param string $tenant_id tenant_id
      *
      * @return self
      */
@@ -350,7 +356,7 @@ class ChannelmanagerUpdateMarketRequest implements ModelInterface, ArrayAccess, 
     /**
      * Gets id
      *
-     * @return string|null
+     * @return string
      */
     public function getId()
     {
@@ -360,7 +366,7 @@ class ChannelmanagerUpdateMarketRequest implements ModelInterface, ArrayAccess, 
     /**
      * Sets id
      *
-     * @param string|null $id id
+     * @param string $id id
      *
      * @return self
      */
@@ -404,7 +410,7 @@ class ChannelmanagerUpdateMarketRequest implements ModelInterface, ArrayAccess, 
     /**
      * Gets payload_mask
      *
-     * @return string[]|null
+     * @return string|null
      */
     public function getPayloadMask()
     {
@@ -414,7 +420,7 @@ class ChannelmanagerUpdateMarketRequest implements ModelInterface, ArrayAccess, 
     /**
      * Sets payload_mask
      *
-     * @param string[]|null $payload_mask payload_mask
+     * @param string|null $payload_mask payload_mask
      *
      * @return self
      */

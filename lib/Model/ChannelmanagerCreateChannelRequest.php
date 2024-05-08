@@ -333,6 +333,15 @@ class ChannelmanagerCreateChannelRequest implements ModelInterface, ArrayAccess,
     {
         $invalidProperties = [];
 
+        if ($this->container['tenant_id'] === null) {
+            $invalidProperties[] = "'tenant_id' can't be null";
+        }
+        if ($this->container['code'] === null) {
+            $invalidProperties[] = "'code' can't be null";
+        }
+        if ($this->container['name'] === null) {
+            $invalidProperties[] = "'name' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -351,7 +360,7 @@ class ChannelmanagerCreateChannelRequest implements ModelInterface, ArrayAccess,
     /**
      * Gets tenant_id
      *
-     * @return string|null
+     * @return string
      */
     public function getTenantId()
     {
@@ -361,7 +370,7 @@ class ChannelmanagerCreateChannelRequest implements ModelInterface, ArrayAccess,
     /**
      * Sets tenant_id
      *
-     * @param string|null $tenant_id tenant_id
+     * @param string $tenant_id tenant_id
      *
      * @return self
      */
@@ -378,7 +387,7 @@ class ChannelmanagerCreateChannelRequest implements ModelInterface, ArrayAccess,
     /**
      * Gets code
      *
-     * @return string|null
+     * @return string
      */
     public function getCode()
     {
@@ -388,7 +397,7 @@ class ChannelmanagerCreateChannelRequest implements ModelInterface, ArrayAccess,
     /**
      * Sets code
      *
-     * @param string|null $code code
+     * @param string $code code
      *
      * @return self
      */
@@ -432,7 +441,7 @@ class ChannelmanagerCreateChannelRequest implements ModelInterface, ArrayAccess,
     /**
      * Gets name
      *
-     * @return string|null
+     * @return string
      */
     public function getName()
     {
@@ -442,7 +451,7 @@ class ChannelmanagerCreateChannelRequest implements ModelInterface, ArrayAccess,
     /**
      * Sets name
      *
-     * @param string|null $name name
+     * @param string $name name
      *
      * @return self
      */

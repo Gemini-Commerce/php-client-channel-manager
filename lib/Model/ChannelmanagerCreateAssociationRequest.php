@@ -298,6 +298,15 @@ class ChannelmanagerCreateAssociationRequest implements ModelInterface, ArrayAcc
     {
         $invalidProperties = [];
 
+        if ($this->container['tenant_id'] === null) {
+            $invalidProperties[] = "'tenant_id' can't be null";
+        }
+        if ($this->container['channel_grn'] === null) {
+            $invalidProperties[] = "'channel_grn' can't be null";
+        }
+        if ($this->container['market_grn'] === null) {
+            $invalidProperties[] = "'market_grn' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -316,7 +325,7 @@ class ChannelmanagerCreateAssociationRequest implements ModelInterface, ArrayAcc
     /**
      * Gets tenant_id
      *
-     * @return string|null
+     * @return string
      */
     public function getTenantId()
     {
@@ -326,7 +335,7 @@ class ChannelmanagerCreateAssociationRequest implements ModelInterface, ArrayAcc
     /**
      * Sets tenant_id
      *
-     * @param string|null $tenant_id tenant_id
+     * @param string $tenant_id tenant_id
      *
      * @return self
      */
@@ -343,7 +352,7 @@ class ChannelmanagerCreateAssociationRequest implements ModelInterface, ArrayAcc
     /**
      * Gets channel_grn
      *
-     * @return string|null
+     * @return string
      */
     public function getChannelGrn()
     {
@@ -353,7 +362,7 @@ class ChannelmanagerCreateAssociationRequest implements ModelInterface, ArrayAcc
     /**
      * Sets channel_grn
      *
-     * @param string|null $channel_grn channel_grn
+     * @param string $channel_grn channel_grn
      *
      * @return self
      */
@@ -370,7 +379,7 @@ class ChannelmanagerCreateAssociationRequest implements ModelInterface, ArrayAcc
     /**
      * Gets market_grn
      *
-     * @return string|null
+     * @return string
      */
     public function getMarketGrn()
     {
@@ -380,7 +389,7 @@ class ChannelmanagerCreateAssociationRequest implements ModelInterface, ArrayAcc
     /**
      * Sets market_grn
      *
-     * @param string|null $market_grn market_grn
+     * @param string $market_grn market_grn
      *
      * @return self
      */

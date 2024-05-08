@@ -6,10 +6,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**tenant_id**| **string** |   | [optional]
-**code**| **string** |   | [optional]
+**tenant_id**| **string** |   |
+**code**| **string** |   |
 **image**| **string** |   | [optional]
-**name**| **string** |   | [optional]
+**name**| **string** |   |
 **default_language**| [**\GeminiCommerce\ChannelManager\Model\ChannelmanagerLanguageCode**](ChannelmanagerLanguageCode.md) |  for more information please, see Model/ChannelmanagerLanguageCode.php  | [optional]
 **settings**| [**\GeminiCommerce\ChannelManager\Model\ChannelmanagerChannelSettings**](ChannelmanagerChannelSettings.md) |   | [optional]
 **website**| [**\GeminiCommerce\ChannelManager\Model\ChannelmanagerChannelTypeWebsite**](ChannelmanagerChannelTypeWebsite.md) |   | [optional]

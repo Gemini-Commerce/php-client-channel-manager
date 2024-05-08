@@ -291,6 +291,12 @@ class ChannelmanagerGetMarketRequest implements ModelInterface, ArrayAccess, \Js
     {
         $invalidProperties = [];
 
+        if ($this->container['tenant_id'] === null) {
+            $invalidProperties[] = "'tenant_id' can't be null";
+        }
+        if ($this->container['id'] === null) {
+            $invalidProperties[] = "'id' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -309,7 +315,7 @@ class ChannelmanagerGetMarketRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets tenant_id
      *
-     * @return string|null
+     * @return string
      */
     public function getTenantId()
     {
@@ -319,7 +325,7 @@ class ChannelmanagerGetMarketRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets tenant_id
      *
-     * @param string|null $tenant_id tenant_id
+     * @param string $tenant_id tenant_id
      *
      * @return self
      */
@@ -336,7 +342,7 @@ class ChannelmanagerGetMarketRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets id
      *
-     * @return string|null
+     * @return string
      */
     public function getId()
     {
@@ -346,7 +352,7 @@ class ChannelmanagerGetMarketRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets id
      *
-     * @param string|null $id id
+     * @param string $id id
      *
      * @return self
      */

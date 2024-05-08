@@ -305,6 +305,15 @@ class ChannelmanagerCreateMarketRequest implements ModelInterface, ArrayAccess, 
     {
         $invalidProperties = [];
 
+        if ($this->container['tenant_id'] === null) {
+            $invalidProperties[] = "'tenant_id' can't be null";
+        }
+        if ($this->container['name'] === null) {
+            $invalidProperties[] = "'name' can't be null";
+        }
+        if ($this->container['countries'] === null) {
+            $invalidProperties[] = "'countries' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -323,7 +332,7 @@ class ChannelmanagerCreateMarketRequest implements ModelInterface, ArrayAccess, 
     /**
      * Gets tenant_id
      *
-     * @return string|null
+     * @return string
      */
     public function getTenantId()
     {
@@ -333,7 +342,7 @@ class ChannelmanagerCreateMarketRequest implements ModelInterface, ArrayAccess, 
     /**
      * Sets tenant_id
      *
-     * @param string|null $tenant_id tenant_id
+     * @param string $tenant_id tenant_id
      *
      * @return self
      */
@@ -350,7 +359,7 @@ class ChannelmanagerCreateMarketRequest implements ModelInterface, ArrayAccess, 
     /**
      * Gets name
      *
-     * @return string|null
+     * @return string
      */
     public function getName()
     {
@@ -360,7 +369,7 @@ class ChannelmanagerCreateMarketRequest implements ModelInterface, ArrayAccess, 
     /**
      * Sets name
      *
-     * @param string|null $name name
+     * @param string $name name
      *
      * @return self
      */
@@ -404,7 +413,7 @@ class ChannelmanagerCreateMarketRequest implements ModelInterface, ArrayAccess, 
     /**
      * Gets countries
      *
-     * @return \GeminiCommerce\ChannelManager\Model\ChannelmanagerCountryCode[]|null
+     * @return \GeminiCommerce\ChannelManager\Model\ChannelmanagerCountryCode[]
      */
     public function getCountries()
     {
@@ -414,7 +423,7 @@ class ChannelmanagerCreateMarketRequest implements ModelInterface, ArrayAccess, 
     /**
      * Sets countries
      *
-     * @param \GeminiCommerce\ChannelManager\Model\ChannelmanagerCountryCode[]|null $countries countries
+     * @param \GeminiCommerce\ChannelManager\Model\ChannelmanagerCountryCode[] $countries countries
      *
      * @return self
      */
